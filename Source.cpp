@@ -1,6 +1,6 @@
 
 #include <iostream>
-#include <time.h>
+#include <ctime>
 
 using namespace std;
 
@@ -10,8 +10,8 @@ int main() {
 
     // ===============    ПУЗЫРЬКОВАЯ сорт по ВОЗРАСТАНИЮ BUBLLE SORT   =========================
 
-  //  /*
-    int const size = 10;
+    /*
+    int const size = 10000;
     int arr[size];
     cout << "\nSource array: ";
     for (int i = 0; i < size; i++)
@@ -50,7 +50,7 @@ int main() {
     // ===============    Сортировка методом ВЫБОРА SELECTION SORT =========================
 
      /*
-    int const size = 5;
+    int const size = 10000;
     int arr[size];
     cout << "\n";
     for (int i = 0; i < size; i++)
@@ -87,7 +87,7 @@ int main() {
 
    // ===============   Сортировка Вставками Insertion SORT   =============================
 
-   /* 
+   // /* 
    cout << "\n"; 
    int const size = 10;
     int arr[size];
@@ -98,10 +98,8 @@ int main() {
     }
     for (int i = 0; i < size; i++)
     {
-
         for (int j = i; j > 0 && arr[j] < arr[j - 1]; j--)
             //выбираем j=i,потому что i это та позиция на которой мы остановились 
-
         {
             int temp = arr[j];
             arr[j] = arr[j - 1];
